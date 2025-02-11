@@ -1,0 +1,38 @@
+<div class="col-md-5 mx-2 mx-md-auto shadow p-3 mt-2 bg-body rounded-4 ">
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <h3 class="navbar-brand">Cadastro de Cliente</h3>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="btn btn-sm btn-secondary" href="/pessoa" ><i class="fa-solid fa-angle-left"></i> Voltar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<form method="post" action="/pessoa/salvar" >
+    <fieldset>
+
+        {{!-- <legend>Dados do Cliente</legend> --}}
+
+          
+                <label for="cpf" class="form-label">CPF</label>
+                <input data-mask = "000.000.000-00" type="text" name="cpf" id="cpf" class="form-control" placeholder="000.000.000-00" required>
+          
+                <label for="nome" class="form-label">NOME COMPLETO</label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Seu nome completo" required>
+          
+                <label for="telefone" class="form-label">TELEFONE</label>
+                <input data-mask="(00) 00000-0000" type="text" id="telefone" name="telefone" class="form-control" placeholder="(99) 99999-9999" required>
+        
+          
+                <label for="email"  class="form-label">E-MAIL</label>
+                <input type="text" id="email" name="email" class="form-control" placeholder="seu_email@gmail.com" required>
+           
+                <button type="submit" class="btn btn-success mt-2">Salvar</button>
+
+    </fieldset>
+</form>
+</div>
