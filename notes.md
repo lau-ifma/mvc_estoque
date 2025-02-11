@@ -12,3 +12,5 @@ https://github.com/brunnovicente/estoquesimples/tree/main
 .env:
 
 MYSQL_URL=mysql://root:xxxxxxxxxxxxxxx@viaduct.proxy.rlwy.net:34141/railway
+
+= mysql://root:BMBddfnrwHTdXibwQzLjjIPRHNkzXTIK@viaduct.proxy.rlwy.net:34141/railway
